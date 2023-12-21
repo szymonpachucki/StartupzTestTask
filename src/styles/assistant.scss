@@ -1,0 +1,36 @@
+.assistant {
+  width: 353px;
+  height: 175px;
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 80vh;
+  left: 75vw;
+  &__message {
+    width: 257px;
+    height: 56px;
+    background-color: $blue;
+    border: 1px solid $blue;
+    border-radius: 20px 20px 0 20px;
+    &-txt {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 14px;
+      color: $white;
+      margin: 14px 18px;
+    }
+  }
+  &__button {
+    color: #939393;
+    font-size: 25px;
+    line-height: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 69px;
+    margin-top: 11px;
+  }
+  &__img {
+    margin-left: 239px;
+  }
+}

@@ -1,0 +1,54 @@
+.hiring {
+  background-color: $offwhite;
+  height: 319px;
+  padding: 112px 0 119px;
+  display: flex;
+  justify-content: space-between;
+  &__background {
+    &-left {
+      width: 318px;
+      height: 100%;
+    }
+    &-right {
+      width: 291px;
+      height: 319px;
+    }
+  }
+  &__content {
+    width: 443px;
+    margin: 28px 0 0;
+    display: flex;
+    flex-direction: column;
+    &-title {
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 50px;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+    }
+    &-txt {
+      margin: 30px 0;
+      font-size: 24px;
+      font-weight: 400;
+      text-align: center;
+      color: $orange;
+    }
+    &-button {
+      width: 243px;
+      height: 45px;
+      background-color: $blue;
+      color: $white;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 18px;
+      border: 1px solid $blue;
+      border-radius: 20px;
+      margin: 0 auto;
+      &:hover {
+        background-color: $white;
+        color: $blue;
+      }
+    }
+  }
+}

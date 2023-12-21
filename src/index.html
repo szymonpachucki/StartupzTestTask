@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar</title>
-    <link rel="stylesheet" href="./src/styles/main.scss">
+    <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
     <header class="header">
       <img
-        src="./src/images/logo.svg"
+        src="./images/logo.svg"
         alt="logo"
         class="header__logo"
       >
@@ -69,41 +69,39 @@
 
     <section class="motivation">
       <img
-        src="./src/images/Thumb.png"
+        src="./images/Thumb.png"
         alt="thumb up icon"
         class="motivation__icon"
       >
       <h1 class="motivation__title">We love solving problems!</h1>
       <img
-        src="./src/images/Thumb.png"
+        src="./images/Thumb.png"
         alt="thumb up icon"
         class="motivation__icon"
       >
+
     </section>
 
-    <section class="assistant">
+    <!-- <section class="assistant">
       <div class="assistant__message">
         <h3 class="assistant__message-txt">
             Hi! I am Ben, your virtual assistant.
             How can I make your day better?
         </h3>
       </div>
-      <div class="assistant__button">
-        <div class="assistant__button-line"></div>
-        <div class="assistant__button-line"></div>
-      </div>
+      <a class="assistant__button">x</a>
       <img
-        src="./src/images/personIcon.png"
+        src="./images/personIcon.png"
         alt="assistance icon"
         class="assistant__img"
       >
-    </section>
+    </section> -->
 
     <section class="values">
       <div class="values__description">
         <h1 class="values__description-title">Our core values</h1>
         <img
-          src="./src/images/lightBulb.svg"
+          src="./images/lightBulb.svg"
           alt="lightBulb icon"
           class="values__description-icon"
         >
@@ -111,6 +109,7 @@
       <div class="values__content">
         <div class="values__content-block">
           <h3 class="values__content-block-title">01. Innovation</h3>
+          <div class="values__content-block-line"></div>
           <h3 class="values__content-block-txt">
             Startupz operates where entrepreneurship
             and technology intersect. We design solutions and turn them into businesses models.
@@ -118,6 +117,7 @@
         </div>
         <div class="values__content-block">
           <h3 class="values__content-block-title">02. People</h3>
+          <div class="values__content-block-line"></div>
           <h3 class="values__content-block-txt">
             Talent is what enable us to create great companies.
           </h3>
@@ -135,19 +135,20 @@
             It provides all pieces of the localization puzzle in one single integrated solution.
           </h3>
           <img
-            src="./src/images/OurWork1.png"
+            src="./images/OurWork1.png"
             alt="example of our work"
             class="ourWork__content-block-img"
           >
           <button class="ourWork__content-block-button">More</button>
         </div>
+
         <div class="ourWork__content-block">
           <h2 class="ourWork__content-block-title">Feedback Labs</h2>
           <h3 class="ourWork__content-block-txt">
             Feedback Labs turns feedback into actionable insights for your team.
           </h3>
           <img
-            src="./src/images/OurWork2.png"
+            src="./images/OurWork2.png"
             alt="example of our work"
             class="ourWork__content-block-img"
           >
@@ -156,10 +157,10 @@
         <div class="ourWork__content-block">
           <h2 class="ourWork__content-block-title">Codekeeper</h2>
           <h3 class="ourWork__content-block-txt">
-            Codekeeper isan all-in-one solution for software developers and publishers to provide source code escrow as part of service level and license agreements.
+            Codekeeper is an all-in-one solution for software developers and publishers to provide source code escrow as part of service level and license agreements.
           </h3>
           <img
-            src="./src/images/OurWork3.png"
+            src="./images/OurWork3.png"
             alt="example of our work"
             class="ourWork__content-block-img"
           >
@@ -171,7 +172,7 @@
             Protected against legal risks, privacy compliant and always up-to-date with the latest regulatory developments.
           </h3>
           <img
-            src="./src/images/OurWork4.png"
+            src="./images/OurWork4.png"
             alt="example of our work"
             class="ourWork__content-block-img"
           >
@@ -182,7 +183,7 @@
 
     <section class="meaning">
       <img
-        src="./src/images/Thumb.png"
+        src="./images/Thumb.png"
         alt="thumb up"
         class="meaning__icon"
       >
@@ -191,7 +192,7 @@
         Any problem that can be solved, will be solved by a startup, and that is a huge opportunity.
       </h1>
       <img
-        src="./src/images/Thumb.png"
+        src="./images/Thumb.png"
         alt="thumb up"
         class="meaning__icon"
       >
@@ -199,7 +200,7 @@
 
     <section class="hiring">
       <img
-        src="./src/images/weAreHiring1.png"
+        src="./images/weAreHiring1.png"
         alt="We are hiring icon"
         class="hiring__background-left"
       >
@@ -212,7 +213,7 @@
         <button class="hiring__content-button">See current openings </button>
       </div>
       <img
-        src="./src/images/weAreHiring2.png"
+        src="./images/weAreHiring2.png"
         alt="We are hiring icon"
         class="hiring__background-right"
       >
@@ -251,45 +252,69 @@
             required
             class="contact__contactForm-txtArea"
             ></textarea>
-          <button class="contact__contactForm-button" type="submit">Submit</button>
+          <button class="contact__contactForm-button" type="submit">
+            Shoot us a message
+          </button>
         </form>
       </div>
       <img
-        src="./src/images/statrtUpz.png"
+        src="./images/statrtUpz.png"
         alt="startUpz logo"
         class="contact__background"
       >
     </section>
-
-    <!-- <footer class="footer">
-      <div class="footer__block">
-        <img
-          src="./src/images/logo.svg"
-          alt="logo"
-          class="footer__block-logo"
-        >
+    <footer class="footer">
+      <img
+        src="./images/logo.svg"
+        alt="logo"
+        class="footer__logo"
+      >
+      <div class="footer__content">
+        <div class="footer__content-companies">
+          <h3 class="footer__content-companies-title">Companies</h3>
+          <a href="#link" class="footer__content-companies-link">
+            Tolq <br>
+            LegalSite <br>
+            Codekeeper <br>
+            Feedback Labs
+          </a>
+        </div>
+        <div class="footer__content-contact">
+          <h3 class="footer__content-contact-title">Contact</h3>
+          <h3 class="footer__content-contact-txt">World Trade Center - The Hague
+            Prinses Margrietplantsoen 33
+            2595 AM The Hague
+            The Netherlands
+          </h3>
+          <a href="#link" class="footer__content-contact-link">
+            Send us an email
+          </a>
+        </div>
+        <div class="footer__content-social">
+          <h3 class="footer__content-social-title">Follow us</h3>
+          <img
+            class="footer__content-social-icon"
+            src="./images/Vector.png"
+            alt="twitter"
+          >
+          <img
+            class="footer__content-social-icon"
+            src="./images/Linkedin.svg"
+            alt="linkedin"
+          >
+          <img
+            class="footer__content-social-icon"
+            src="./images/instagram.svg"
+            alt="instagram"
+          >
+        </div>
       </div>
-      <div>
-        <h3></h3>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
+      <div class="footer__rights">
+        <h3 class="footer__rights-txt">
+          © 2020 Startupz.
+          All rights reserved.
+        </h3>
       </div>
-      <div>
-        <h3></h3>
-        <h3></h3>
-        <a href=""></a>
-      </div>
-      <div>
-        <h3></h3>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-      </div>
-      <div>
-        <h3></h3>
-      </div>
-    </footer> -->
+    </footer>
   </body>
 </html>

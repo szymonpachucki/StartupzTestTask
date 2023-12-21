@@ -1,0 +1,88 @@
+
+.contact {
+  position: relative;
+  width: 84vw;
+  margin: 0 auto;
+  background-color: $yellow;
+  padding: 60px 8vw 70px;
+  color: $white;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__description {
+    width: 677px;
+    margin-right: calc(100% - 677px);
+
+    &-title {
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 55px;
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+
+    &-txt {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 24px;
+      margin: 34px 0;
+    }
+  }
+
+  &__contactForm {
+    height: 489px;
+    width: 429px;
+    padding: 72px 42px 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: $offwhite;
+    border-radius: 10px;
+    z-index: 1;
+
+    &-input,
+    &-txtArea {
+      width: 100%;
+      padding-left: 16px;
+      background-color: $white;
+      color: $black;
+      font-size: 18px;
+      line-height: 18px;
+      border: $white;
+      border-radius: 10px;
+      margin-bottom: 16px;
+    }
+
+    &-txtArea {
+      height: 254px;
+      padding-top: 16px;
+      margin-bottom: 34px;
+    }
+
+    &-button {
+      height: 45px;
+      width: 243px;
+      color: $white;
+      background-color: $black;
+      border: 1px solid $black;
+      border-radius: 20px;
+      font-family: Circular Std;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 18px;
+      margin-left: 94px;
+
+      &:hover {
+        background-color: $white;
+        color: #3D4F5C;
+      }
+    }
+  }
+
+  &__background {
+    height: 545px;
+    width: 668px;
+    position: absolute;
+    right: 30vw;
+    bottom: 0;
+  }
+}

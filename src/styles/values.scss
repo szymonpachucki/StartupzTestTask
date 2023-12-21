@@ -1,0 +1,50 @@
+.values {
+  width: 84vw;
+  background-color: $offwhite;
+  padding: 154px 8vw 166px;
+  margin: 0 auto;
+  &__description {
+    display: flex;
+    height: 108px;
+    justify-content: space-between;
+    margin-bottom: 77px;
+    &-title {
+      font-size: 700;
+      line-height: 50px;
+      font-size: 50px;
+      margin: 18px 0 40px;
+    }
+    &-icon {
+      margin-right: 23px;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    &-block {
+      margin-right: 74px;
+      margin-bottom: 30px;
+      width: 641px;
+      &:last-child {
+        width: 351px;
+      }
+      &-title {
+        color: $orange;
+        font-weight: 700;
+        line-height: 30px;
+        font-size: 30px;
+      }
+      &-line {
+        margin: 19px 0 26px;
+        width: 50px;
+        height: 1px;
+        background-color: $black;
+      }
+      &-txt {
+        font-weight: 400;
+        line-height: 38px;
+        font-size: 30px;
+      }
+    }
+  }
+}

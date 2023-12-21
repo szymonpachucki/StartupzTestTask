@@ -1,0 +1,60 @@
+.weAre {
+  width: 84vw;
+  margin: 0 auto;
+  background-color: $offwhite;
+  padding: 147px 8vw 127px;
+  &__description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &-txtBlock {
+      width: 80%;
+      &-title {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 50px;
+        margin: 0;
+      }
+      &-txt {
+        font-size: 24px;
+        color: $orange;
+        line-height: 30px;
+        margin: 32px 0;
+      }
+    }
+    &-img {
+      margin-right: 39px;
+      width: 75px;
+      height: 88px;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 47px 0 127px;
+    &-block {
+      width: 330px;
+      margin-right: 80px;
+      margin-bottom: 30px;
+      &-title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        color: $orange;
+        margin: 0;
+      }
+      &-line {
+        margin: 19px 0 26px;
+        width: 50px;
+        height: 1px;
+        background-color: $black;
+      }
+      &-txt {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 38px;
+        margin: 0;
+      }
+    }
+  }
+}

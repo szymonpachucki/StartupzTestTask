@@ -1,0 +1,58 @@
+.aboutUs{
+  position: relative;
+  width: 92vw;
+  margin-left: 8vw;
+  height: 520px;
+  display: flex;
+  overflow: hidden;
+  &__description {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 758px;
+    z-index: 1;
+    &-title {
+      font-weight: 700;
+      font-size: 85px;
+      line-height: 85px;
+      width: 447px;
+      letter-spacing: -2%;
+      margin: 0;
+    }
+    &-txt {
+      color: $orange;
+      font-size: 24px;
+      line-height: 30px;
+      margin: 25px 0;
+    }
+    &-button {
+      height: 45px;
+      width: 157px;
+      cursor: pointer;
+      color: $white;
+      background-color: $blue;
+      border: 1px solid $blue;
+      border-radius: 20px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 18px;
+      transition: background-color 0.3s ease;
+      &:hover {
+        background-color: $white;
+        color: $blue;
+      }
+    }
+  }
+  &__background {
+    margin-top: 13px;
+    position: absolute;
+    right: 0;
+    flex-shrink: 0;
+    height: 507px;
+    width: 705px;
+    background-image: url('../images/mainBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

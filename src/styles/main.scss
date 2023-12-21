@@ -1,0 +1,13 @@
+@import "variables";
+@import "./header.scss";
+@import "./aboutUs.scss";
+@import "./weAre.scss";
+@import "./motivation.scss";
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  color: $black;
+  font-weight: 400;
+  letter-spacing: -1%;
+}

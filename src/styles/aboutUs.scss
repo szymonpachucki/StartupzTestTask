@@ -51,8 +51,71 @@
     height: 507px;
     width: 705px;
     background-image: url('../images/mainBackground.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 1220px) and (min-width: 744px) {
+  .aboutUs {
+    height: 770px;
+    &__description {
+      width: 60vw;
+
+    }
+    &__background {
+      margin-top: 263px;
+    }
+  }
+}
+
+@media screen and (max-width: 744px) and (min-width: 400px) {
+  .aboutUs {
+    height: 425px;
+    &__description {
+      width: 80vw;
+      &-title {
+        font-size: 60px;
+        line-height: 60px;
+        width: 80vw;
+      }
+      &-txt {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    &__background {
+      margin-top: 163px;
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .aboutUs {
+    height: 350px;
+    &__description {
+      width: 80vw;
+      &-title {
+        font-size: 40px;
+        line-height: 40px;
+        width: 80vw;
+      }
+      &-txt {
+        font-size: 16px;
+        line-height: 20px;
+      }
+      &-button {
+      height: 40px;
+      width: 130px;
+      font-size: 14px;
+      }
+    }
+    &__background {
+      flex-shrink: 1;
+      margin-top: 83px;
+      width: 90%;
+    }
   }
 }

@@ -5,33 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <script src="./scripts/main.js"></script>
   </head>
   <body>
     <header class="header">
+
       <img
         src="./images/logo.svg"
         alt="logo"
         class="header__logo"
       >
       <nav class="header__nav">
-        <a href="#link" class="header__nav-link">Startups</a>
-        <a href="#link" class="header__nav-link">Contact</a>
-        <button class="header__nav-button">
-          Work with us!
+        <a href="#ourWork" class="header__nav-link">Startups</a>
+        <a href="#contact" class="header__nav-link">Contact</a>
+        <button href="#contact" class="header__nav-button">
+          <a class="header__burger-nav-button-txt" href="#contact">Work with us!</a>
         </button>
+        <img
+          src="./images/burger.png"
+          alt="menu"
+          class="header__nav-icon"
+         >
+        <img
+          src="./images/x.png"
+          alt="menu"
+          class="header__nav-close"
+         >
       </nav>
+      <div class="header__burger">
+        <nav class="header__burger-nav">
+          <a
+            href="#ourWork"
+            onclick="toggleBurger();"
+            class="header__burger-nav-link">Startups</a>
+          <a
+            href="#contact"
+            class="header__burger-nav-link"
+            onclick="toggleBurger();"
+          >Contact</a>
+          <a
+          href="#contact"
+          onclick="toggleBurger()"
+          class="header__burger-nav-link"
+          >
+            <button
+              onclick="toggleBurger()"
+              href="#contact"
+              class="header__burger-nav-button"
+            >
+            Work with us!
+            </button>
+          </a>
+        </nav>
+      </div>
+
     </header>
 
-    <section class="aboutUs">
+    <section id="aboutUs" class="aboutUs">
       <div class="aboutUs__description">
         <h1 class="aboutUs__description-title">We Create Startups.</h1>
         <h3 class="aboutUs__description-txt">We are startup studio that develops and launches new companies.</h3>
-        <button class="aboutUs__description-button">See our works</button>
+        <a href="#ourWork">
+          <button href="#ourWork" class="aboutUs__description-button">See our works</button>
+        </a>
       </div>
       <div class="aboutUs__background"></div>
     </section>
 
-    <section class="weAre">
+    <section id="weAre" class="weAre">
       <div class="weAre__description">
         <div class="weAre__description-txtBlock">
           <h1 class="weAre__description-txtBlock-title">Who we are</h1>
@@ -67,7 +108,7 @@
       </div>
     </section>
 
-    <section class="motivation">
+    <section id="motivation" class="motivation">
       <img
         src="./images/Thumb.png"
         alt="thumb up icon"
@@ -82,22 +123,23 @@
 
     </section>
 
-    <!-- <section class="assistant">
+    <section class="assistant">
       <div class="assistant__message">
         <h3 class="assistant__message-txt">
             Hi! I am Ben, your virtual assistant.
             How can I make your day better?
         </h3>
       </div>
-      <a class="assistant__button">x</a>
+      <a onclick="hideAssistant();" id="xButton"
+       class="assistant__button">x</a>
       <img
         src="./images/personIcon.png"
         alt="assistance icon"
         class="assistant__img"
       >
-    </section> -->
+    </section>
 
-    <section class="values">
+    <section id="values" class="values">
       <div class="values__description">
         <h1 class="values__description-title">Our core values</h1>
         <img
@@ -125,7 +167,7 @@
       </div>
     </section>
 
-    <section class="ourWork">
+    <section id="ourWork" class="ourWork">
       <h1 class="ourWork__title">Our works</h1>
       <div class="ourWork__content">
         <div class="ourWork__content-block">
@@ -181,7 +223,7 @@
       </div>
     </section>
 
-    <section class="meaning">
+    <section id="meaning" class="meaning">
       <img
         src="./images/Thumb.png"
         alt="thumb up"
@@ -198,7 +240,7 @@
       >
     </section>
 
-    <section class="hiring">
+    <section id="hiring" class="hiring">
       <img
         src="./images/weAreHiring1.png"
         alt="We are hiring icon"
@@ -210,7 +252,9 @@
           We're always looking for talented people to join and help build our startups.
           Check out our current openings
         </h3>
-        <button class="hiring__content-button">See current openings </button>
+        <button class="hiring__content-button">
+          <a class="hiring__content-button-txt" href="#contact">See current openings</a>
+        </button>
       </div>
       <img
         src="./images/weAreHiring2.png"
@@ -219,7 +263,7 @@
       >
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="contact__description">
         <h1 class="contact__description-title">
           Are you ready
@@ -237,6 +281,7 @@
             name="name"
             required
             class="contact__contactForm-input"
+            placeholder="Name*"
             >
           <input
             type="email"
@@ -244,6 +289,7 @@
             name="email"
             required
             class="contact__contactForm-input"
+            placeholder="Email*"
           >
           <textarea
             id="message"
@@ -251,8 +297,12 @@
             rows="4"
             required
             class="contact__contactForm-txtArea"
+            placeholder="Message*"
             ></textarea>
-          <button class="contact__contactForm-button" type="submit">
+          <button
+          class="contact__contactForm-button"
+          onclick="submitForm(event)"
+          type="submit">
             Shoot us a message
           </button>
         </form>
@@ -260,19 +310,22 @@
       <img
         src="./images/statrtUpz.png"
         alt="startUpz logo"
+        id="rocket"
         class="contact__background"
       >
     </section>
     <footer class="footer">
-      <img
-        src="./images/logo.svg"
-        alt="logo"
-        class="footer__logo"
-      >
+      <a href="#aboutUs">
+        <img
+          src="./images/logo.svg"
+          alt="logo"
+          class="footer__logo"
+        >
+      </a>
       <div class="footer__content">
         <div class="footer__content-companies">
           <h3 class="footer__content-companies-title">Companies</h3>
-          <a href="#link" class="footer__content-companies-link">
+          <a href="#ourWork" class="footer__content-companies-link">
             Tolq <br>
             LegalSite <br>
             Codekeeper <br>
@@ -286,27 +339,33 @@
             2595 AM The Hague
             The Netherlands
           </h3>
-          <a href="#link" class="footer__content-contact-link">
+          <a href="mailto:szymonpachucki.praca@gmail.com" class="footer__content-contact-link">
             Send us an email
           </a>
         </div>
         <div class="footer__content-social">
           <h3 class="footer__content-social-title">Follow us</h3>
-          <img
+          <a href="#aboutUs">
+            <img
             class="footer__content-social-icon"
             src="./images/Vector.png"
-            alt="twitter"
+            alt="instagram"
           >
-          <img
+          </a>
+          <a href="#aboutUs">
+            <img
             class="footer__content-social-icon"
             src="./images/Linkedin.svg"
-            alt="linkedin"
+            alt="instagram"
           >
-          <img
+          </a>
+          <a href="#aboutUs">
+            <img
             class="footer__content-social-icon"
             src="./images/instagram.svg"
             alt="instagram"
           >
+          </a>
         </div>
       </div>
       <div class="footer__rights">
@@ -317,4 +376,30 @@
       </div>
     </footer>
   </body>
+  <script>
+      function submitForm(event) {
+
+    event.preventDefault();
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    if (name === "" || email === "" || message === "") {
+      alert("Please fill all inputs.");
+      return false;
+    }
+
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert("It is not an e-mail!");
+      return false;
+    }
+
+    alert("Data send successfully.");
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+    document.getElementById('rocket').classList.toggle('show');
+  }
+  </script>
 </html>

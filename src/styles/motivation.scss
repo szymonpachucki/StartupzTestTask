@@ -20,3 +20,38 @@
     margin-top: 16px;
   }
 }
+@media screen and (min-width: 500px) and (max-width: 744px) {
+  .motivation {
+    margin: 120px auto;
+    width: 84vw;
+    height: 55px;
+    &__icon {
+      height: 55px;
+      width: auto;
+    }
+    &__title {
+      font-size: 30px;
+      line-height: 40px;
+      margin-top: 15px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .motivation {
+    margin: 100px auto;
+    width: 84vw;
+    flex-direction: column;
+    height: 212px;
+    &__icon {
+      &:nth-child(3) {
+        margin-left: calc(100% - 55px);
+        margin-top: -25px;
+      }
+    }
+    &__title {
+      font-size: 30px;
+      line-height: 40px;
+      margin: auto;
+    }
+  }
+}

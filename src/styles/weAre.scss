@@ -26,6 +26,10 @@
       margin-right: 39px;
       width: 75px;
       height: 88px;
+      transition: transform 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.3);
+      }
     }
   }
   &__content {
@@ -54,6 +58,86 @@
         font-size: 30px;
         line-height: 38px;
         margin: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1220px) and (min-width: 744px) {
+  .weAre {
+    padding: 127px 8vw 107px;
+    &__description {
+      &-txtBlock {
+        width: 60%;
+      }
+    }
+    &__content {
+      &-block {
+        &-title {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 744px) and (min-width: 500px) {
+  .weAre {
+    padding: 127px 8vw 107px;
+    &__description {
+      &-txtBlock {
+        width: 80%;
+        &-txt {
+          font-size: 20px;
+        }
+      }
+      &-img {
+        display: none;
+      }
+    }
+    &__content {
+      &-block {
+        &-title {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .weAre {
+    padding: 107px 8vw 87px;
+    &__description {
+      &-txtBlock {
+        width: 100%;
+        &-title {
+          font-size: 30px;
+          line-height: 30px;
+        }
+        &-txt {
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+      &-img {
+        display: none;
+      }
+    }
+    &__content {
+      &-block {
+        width: 90%;
+        margin-right: 0;
+        &-title {
+          font-size: 25px;
+          line-height: 25px;
+        }
+        &-line {
+          width: 40px;
+        }
+        &-txt {
+          font-size: 24px;
+          line-height: 28px;
+        }
       }
     }
   }

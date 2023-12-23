@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   position: fixed;
   top: 80vh;
-  left: 75vw;
+  left: calc(90vw - 353px);
   &__message {
     width: 257px;
     height: 56px;
@@ -40,7 +40,7 @@
   width: 84vw;
   height: 131px;
   top: 70vh;
-  left: 65vw;
+  left: 6vw;
   &__message {
     width: 80%;
     height: 75px;

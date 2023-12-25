@@ -81,6 +81,8 @@ document.addEventListener('DOMContentLoaded', function() {
   let menuToggled = false;
 
   function toggleBurger() {
+    hideAssistant();
+
     const menu = document.querySelector('.header__burger');
     const close = document.querySelector('.header__nav-close');
     const nav = document.querySelector('.header__burger-nav');

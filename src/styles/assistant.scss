@@ -47,14 +47,15 @@
     display: flex;
     justify-content: space-around;
     &-txt {
-      margin-top: 9px;
+      margin: auto 9px;
     }
   }
   &__button {
     margin-left: 15px;
   }
   &__img {
-    margin-left: 50vw;
+    margin-left: 55vw;
+    width: 30vw;
   }
   }
 }
